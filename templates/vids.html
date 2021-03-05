@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        <title>VPlayer</title>
+        <link rel="icon" href="/static/icon.png">
+        <link rel="stylesheet" href="/static/style.css">
+        <script defer src="/static/layout.js"></script>
+        <script defer src="/static/speed.js"></script>
+    </head>
+    <body>
+        <header>
+            VPlayer<sub>hq</sub>
+        </header>
+        <main class="vids-container">
+            {% for vid in vids %}
+                <section class="vid-container">
+                    <h3>{{ vid[:-4] }}</h3>
+                    <video src="/vids/{{ vid }}" controls></video>
+                </section>
+            {% endfor %}
+        </main>
+        <input class="vid-speed" type="number" min="1" max="2" step="0.25"  placeholder="1.0">
+        <div class="layout-setting">
+            <span class="list-icon">
+                <div class="icon-item"></div>
+                <div class="icon-item"></div>
+            </span>
+            <span class="grid-icon">
+                <span class="icon-item"></span>
+                <span class="icon-item"></span>
+                <span class="icon-item"></span>
+                <span class="icon-item"></span>
+            </span>
+        </div>
+    </body>
+</html>

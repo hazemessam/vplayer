@@ -1,0 +1,144 @@
+:root {
+    --primary-color: dodgerblue;
+    --primary-radius: 8px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: var(--primary-radius);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-color);
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    font-size: 28pt;
+    padding: 15px;
+    font-family: monospace;
+}
+
+header sub {
+    font-size: medium;
+    color: #ffeb3b;
+}
+
+.vids-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: .3s linear;
+}
+
+@media (max-width: 600px) {
+    .vids-container {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+}
+
+.vid-container {
+    width: 40%;
+    margin: 10px;
+    transition: .3s linear;
+}
+
+@media (max-width: 600px) {
+    .vid-container {
+        width: 80% !important;
+    }
+}
+
+.vid-container h3 {
+    color: #111;
+    background-color: #fff;
+    margin: 0;
+    padding: 10px;
+    border-top-right-radius: var(--primary-radius);
+    border-top-left-radius: var(--primary-radius);
+}
+
+video {
+    width: 100%;
+    border-bottom-right-radius: var(--primary-radius);
+    border-bottom-left-radius: var(--primary-radius);
+}
+
+.vid-speed {
+    position: fixed;
+    top: 20px;
+    left: 0px;
+    width: 50px;
+    border: none;
+    border-top-right-radius: var(--primary-radius);
+    border-bottom-right-radius: var(--primary-radius);
+    font-size: 14pt;  
+    padding: 5px;
+    box-shadow: 0 0 5px #111;
+}
+
+.layout-setting {
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    background: #fff;
+    width: fit-content;
+    padding: 8px;
+    display: flex;
+    gap: 8px;
+    border-top-right-radius: var(--primary-radius);
+    border-bottom-right-radius: var(--primary-radius);
+    box-shadow: 0 0 5px #111;
+}
+
+@media (max-width: 600px) {
+    .layout-setting {
+        display: none;
+    }
+}
+
+.list-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10%;
+    cursor: pointer;
+}
+
+.list-icon .icon-item {
+    width: 100%;
+    height: 45%;
+    background: #64676F;
+    border-radius: 2px;
+    transition: .4s;
+}
+
+.grid-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    cursor: pointer;
+}
+
+.grid-icon .icon-item {
+    width: 45%;
+    height: 45%;
+    background: #64676F;
+    border-radius: 2px;
+    transition: .4s;
+}
