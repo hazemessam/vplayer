@@ -20,4 +20,4 @@ Open the browser and go to http://localhost:5000
 
 ## Hints
 - The videos must be .mp4 files.
-- If videos names are sorted with numbers (ex. video 1.mp4, video 2.mp4) you can add `sort=123` or `sort=num` query parameters to sort them according to the numbers at the end of their names.
+- If videos names are sorted with numbers (ex. video 1.mp4, video 2.mp4) you can add `sort=123` or `sort=num` query parameters to sort them according to the numbers at the end of their names http://localhost:5000?sort=123.
