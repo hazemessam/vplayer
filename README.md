@@ -1,5 +1,5 @@
 # VPlayer
-VPlayer is a web based video player.
+VPlayer is a web-based video player.
 
 ## Features
 - Control the video speed (the default windows video player doesn't have this feature).
