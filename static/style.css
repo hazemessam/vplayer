@@ -16,6 +16,10 @@
     border-radius: var(--primary-radius);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--primary-color);
