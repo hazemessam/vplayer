@@ -90,7 +90,7 @@ video {
     border-bottom-right-radius: var(--primary-radius);
     font-size: 14pt;  
     padding: 5px;
-    box-shadow: 0 0 5px #111;
+    /*box-shadow: 0 0 10px #555;*/
 }
 
 .layout-setting {
@@ -104,7 +104,7 @@ video {
     gap: 8px;
     border-top-right-radius: var(--primary-radius);
     border-bottom-right-radius: var(--primary-radius);
-    box-shadow: 0 0 5px #111;
+    /*box-shadow: 0 0 10px #555;*/
 }
 
 @media (max-width: 600px) {
